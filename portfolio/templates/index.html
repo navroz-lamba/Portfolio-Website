@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+<section class="home-content">
+    <div class="container p-0">
+        <div class="row portfolio-row justify-content-center">
+            <div class="col-12 col-md-5">
+                <div class="row justify-content-center">
+                    <div class="text-center">
+                            <h2 class="index-header">My latest project</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="row index-img text-center">
+                        <h6>How to Build a Data Science Portfolio Website</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <a target="_blank" href="https://github.com/navroz-lamba/Portfolio-Website">
+                        <img class="portfolio-img" src="/static/img/portfolio-website.png">
+                    </a>
+                </div>
+                <div class="index-bottom text-center">
+                    <p>
+                            <a class="about-link" href="/portfolio">This way</a> to see more of my projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5">
+                <div class="row justify-content-center">
+                    <div class="text-center">
+                            <h2 class="index-header">My latest blog post</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="row index-img text-center">
+                        <h6>Airbus, the new king of the Skies?!
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <a target="_blank" href="https://navrozlamba.com/2020/07/29/king-of-the-skies/">
+                        <img class="portfolio-img" src="/static/img/blogpost.jpg">
+                    </a>
+                </div>
+                <!-- <div class="index-bottom text-center">
+                    <p>
+                        {% if lang == 'en' %}
+                            And <a target="_blank" class="about-link" href="">this way</a> to see more of my blog posts.
+                        {% else %}
+                            Und <a target="_blank" class="about-link" href="">hier</a> zu meinen anderen Blog Posts.
+                        {% endif %}
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
