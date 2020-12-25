@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/navrozlamba/.local/share/virtualenvs/portfolio-navroz-3hEmdfgf/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
+}
