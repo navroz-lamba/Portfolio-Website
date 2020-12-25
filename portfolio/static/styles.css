@@ -1,0 +1,479 @@
+.navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#index-navbarbrand
+{
+    color: #2CD4A7;
+}
+
+#portfolio-navbarbrand
+{
+    color: #2FDEDB;
+}
+
+#about-navbarbrand
+{
+    color: #33C6B8;
+}
+
+#index-nav-link:hover, #index-btn-lang
+{
+    background-color: #2CD4A7;
+}
+
+#portfolio-nav-link:hover, #portfolio-btn-lang
+{
+    background-color: #2FDEDB;
+}
+
+#about-nav-link:hover, #about-btn-lang
+{
+    background-color: #33C6B8;
+}
+
+.title-color
+{
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+#index-title
+{
+    background-color: #2CD4A7;
+}
+
+#portfolio-title
+{
+    background-color: #2FDEDB;
+}
+
+#about-title
+{
+    background-color: #33C6B8;
+}
+
+.container
+{
+    min-height:100%;
+    min-width:100%;
+}
+
+/* This is for debugging purposes to see the size of divs
+*{
+ outline: 1px solid red;
+} */
+
+
+.title-color
+{
+    height: 600px;
+    position: relative;
+}
+
+.title-container
+{
+    padding-left: 180px;
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .title-container {
+      padding: 0 20px 0 20px;
+      margin:0;
+    }
+}
+
+@media (max-width: 780px) {
+    .title-container {
+      padding: 0 40px 0 40px;
+      margin:0;
+    }
+}
+
+.title-text
+{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-description
+{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.home-content
+{
+    margin: 40px 0 70px 0;
+}
+
+.index-header
+{
+    color: #2CD4A7;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.index-btn
+{
+    margin: 10px 0 10px 0;
+    background-color: #2CD4A7;
+    color: #FFFFFF;
+    padding: 5px 0 5px 0;
+}
+
+.index-btn:hover
+{
+    background-color: rgba(44,212,167,0.5);
+    color: #000000;
+    text-decoration: none;
+}
+
+.index-link:hover
+{
+    text-decoration: none;
+    color: #2CD4A7;
+}
+
+.index-img
+{
+    padding-bottom: 5px;
+    min-height: 51px;
+}
+
+.index-bottom
+{
+    margin-top: 30px;
+}
+
+.portfolio-row
+{
+    margin: 30px 30px 30px 30px;
+}
+
+.title-link
+{
+    color: #2FDEDB;
+}
+
+.title-link:hover
+{
+    text-decoration: none;
+    color: #2FDEDB;
+}
+
+.col-md-5
+{
+    padding: 20px 30px 20px 30px;
+}
+
+.project-des
+{
+    font-size: 14px;
+    min-height: 62px;
+}
+
+.skills
+{
+    font-size: 12px;
+}
+
+.bold
+{
+    font-weight: bold;
+    color: #2FDEDB;
+}
+
+.portfolio-img
+{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 5px 5px 5px 5px;
+}
+
+.portfolio-img:hover
+{
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+.portfolio-btn
+{
+    margin: 10px 0 10px 0;
+    background-color: #2FDEDB;
+    color: #FFFFFF;
+}
+
+.portfolio-btn:hover
+{
+    background-color: rgba(47,222,219,0.5);
+    color: #000000;
+}
+
+.about-header
+{
+    color: #33C6B8;
+    font-weight: bold;
+}
+
+/* What follows now is the styling for the timeline on the About page
+    The code was taken from https://www.w3schools.com/howto/howto_css_timeline.asp */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #33C6B8;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 1px;
+}
+
+/* Container around content */
+.container-timeline {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-timeline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 5;
+  right: 30px;
+  border: medium solid #33C6B8;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #33C6B8;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 5;
+  left: 30px;
+  border: medium solid #33C6B8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #33C6B8 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -8px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border: 2px solid #33C6B8;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+    margin-left: -5px;
+  }
+
+/* Full-width containers */
+  .container-timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+.container-timeline::before {
+  left: 60px;
+  border: medium solid #33C6B8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #33C6B8 transparent transparent;
+}
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+/* This was the end of the code taken from w3schools */
+
+.about-link:hover
+{
+    text-decoration: none;
+}
+
+/* This is taken from https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+h2.about-header
+{
+    color: #33C6B8;
+}
+
+.about-row
+{
+    margin: 30px 70px 30px 70px;
+}
+
+@media screen and (max-width: 900px) {
+    .about-row{
+        margin: 30px 20px 30px 20px;
+    }
+}
+
+.row-legend
+{
+    margin: 20px 20px 0 20px;
+}
+
+.about-legend
+{
+    display: inline-block;
+    width: 20px;
+}
+
+.skill-cat
+{
+    margin-top: 20px;
+}
+
+.skill-bar
+{
+    position: relative;
+    height: 15px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #CCCCCC, #FFFFFF);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.skill-spec
+{
+    position: absolute;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgba(51,198,184, 1), rgba(51,198,184, 0.5));
+    /*background-color: #33C6B8;*/
+    border-radius: 3px;
+    z-index: 10;
+}
+
+/* This code was taken from https://www.w3schools.com/css/css_tooltip.asp */
+
+/* Tooltip text */
+.skill-bar .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-image: linear-gradient(to bottom right, #F8F8F8, #FFFFFF);
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  top: -38px;
+  right: 55%;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 10;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.skill-bar:hover .tooltiptext {
+  visibility: visible;
+}
+/* end of the text taken from w3schools*/
+
+footer
+{
+    margin-top: 20px;
+}
+
+.copyright
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.impressum
+{
+    padding: 0 50px 0 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .impressum
+    {
+        padding: 30px;
+    }
+}
+
+.source
+{
+    font-style: italic;
+}
