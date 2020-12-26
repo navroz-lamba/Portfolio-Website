@@ -2,6 +2,10 @@ import pandas as pd
 import numpy as np
 import psycopg2
 import os
+from dotenv import load_dotenv
+
+# to the credentials from .env
+load_dotenv()
 
 # read in all necessary Excel files
 titles_en_df = pd.read_excel("database/titles_db_en.xlsx")
@@ -10,7 +14,7 @@ skills_en_df = pd.read_excel("database/skills_db_en.xlsx")
 
 
 # connect and create tables if they don't exist yet
-DATABASE_URL = os.environ['DATABASE_URL']
+DATABASE_URL = os.getnev['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 
@@ -48,7 +52,7 @@ cur.execute("TRUNCATE skills_en RESTART IDENTITY")
 
 for skills_row in skills_en_df.itertuples():
     cur.execute("INSERT INTO skills_en (topic, skills, level, tooltip) VALUES (%s, %s, %s, %s)",
-                [skills_row.topic, skills_row.skill, skills_row.level, skills_row.tooltip])
+                [skills_row.topic, skills_row.skills, skills_row.level, skills_row.tooltip])
     conn.commit()
 
 conn.close()
