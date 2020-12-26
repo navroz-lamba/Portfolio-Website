@@ -8,13 +8,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # read in all necessary Excel files
-titles_en_df = pd.read_excel("database/titles_db_en.xlsx")
-portfolio_en_df = pd.read_excel("database/portfolio_db_en.xlsx")
-skills_en_df = pd.read_excel("database/skills_db_en.xlsx")
+titles_en_df = pd.read_excel("database/titles_db_en.xlsx", engine='openpyxl')
+portfolio_en_df = pd.read_excel("database/portfolio_db_en.xlsx", engine='openpyxl')
+skills_en_df = pd.read_excel("database/skills_db_en.xlsx", engine='openpyxl')
 
 
 # connect and create tables if they don't exist yet
-DATABASE_URL = os.getnev['DATABASE_URL']
+DATABASE_URL = os.getenv('DATABASE_URL_heroku')
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 

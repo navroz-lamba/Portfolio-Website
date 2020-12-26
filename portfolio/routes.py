@@ -3,27 +3,25 @@ from . import app
 from . import helper
 
 
-@app.route('/index', methods=['POST', 'GET'])
-@app.route('/', methods=['POST', 'GET'])
-def index():
+@app.route('/index')
+@app.route('/')
+def index_en():
+    title_text = helper.get_title_content('index')
 
-    greeting = 'Welcome to My Data Science Portfolio Website'
+    return render_template('index.html',
+                            title_text=title_text,
+                            title="DATA SCIENCE & Machine Learning",
+                            id="index")
 
-    return render_template('/index.html',
-                            greeting=greeting)
 
-
-@app.route('/about', methods=['POST', 'GET'])
+@app.route('/about')
 def about_en():
+    title_text = helper.get_title_content('about')
 
-    if request.method == "POST":
-      
-        title_text = helper.get_title_content('about')
+    skills = helper.get_skill_content()
 
-        skills = helper.get_skill_content()
-
-        return render_template('/about.html',
-                                title_text=title_text,
-                                skills=skills,
-                                title="ABOUT ME",
-                                id="about")
+    return render_template('/about.html',
+                            title_text=title_text,
+                            skills=skills,
+                            title="ABOUT ME",
+                            id="about")

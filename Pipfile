@@ -13,6 +13,11 @@ psycopg2-binary = "==2.8.2"
 Werkzeug = "==1.0.1"
 Flask = "==1.1.1"
 sqlalchemy = "*"
+python-dotenv = "*"
+pandas = "*"
+xlrd = "*"
+install = "*"
+openpyxl = "*"
 
 [requires]
 python_version = "3.8"
