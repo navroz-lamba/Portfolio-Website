@@ -5,17 +5,32 @@ from . import helper
 
 @app.route('/index')
 @app.route('/')
-def index_en():
+def index():
     title_text = helper.get_title_content('index')
 
     return render_template('index.html',
                             title_text=title_text,
-                            title="DATA SCIENCE & Machine Learning",
+                            title="DATA SCIENCE & MACHINE LEARNING",
                             id="index")
 
 
+@app.route('/portfolio')
+def portfolio():
+    # get all projects from the database
+    zipped = helper.get_portfolio_content()
+
+    # get the title content for the portfolio page
+    title_text = helper.get_title_content('portfolio')
+
+    return render_template('/portfolio.html',
+                            title_text=title_text,
+                            title="PROJECT PORTFOLIO",
+                            id="portfolio",
+                            projects=zipped)
+
+
 @app.route('/about')
-def about_en():
+def about():
     title_text = helper.get_title_content('about')
 
     skills = helper.get_skill_content()
