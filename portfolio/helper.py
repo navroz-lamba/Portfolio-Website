@@ -1,7 +1,10 @@
 from flask import request
 import psycopg2
 import os
+from dotenv import load_dotenv
 
+# to the credentials from .env
+load_dotenv()
 
 def fetch_content(content_type):
     '''
@@ -11,9 +14,10 @@ def fetch_content(content_type):
     '''
 
     # connect to database
-    DATABASE_URL = os.environ['DATABASE_URL']
+    DATABASE_URL = os.getenv('DATABASE_URL_heroku')
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     cur = conn.cursor()
+    print(cur)
 
     # select everything from the titles database
     if content_type == 'title':
