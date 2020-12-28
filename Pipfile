@@ -8,7 +8,6 @@ flake8 = "*"
 
 [packages]
 gunicorn = "==20.0.4"
-psycopg2 = "==2.8.5"
 psycopg2-binary = "==2.8.2"
 Werkzeug = "==1.0.1"
 Flask = "==1.1.1"
