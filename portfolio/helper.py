@@ -76,7 +76,7 @@ def get_portfolio_content():
         # instantiate list for links
         links = []
         if project[6] != 'NaN':
-            links.append(["Blog Post", project[6]])
+            links.append(["Web App", project[6]])
         if project[5] != 'NaN':
             links.append(["Code", project[5]])
         one_project.append(links)
