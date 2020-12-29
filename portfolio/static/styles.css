@@ -20,6 +20,11 @@
     color: #30346c;
 }
 
+#resume-navbarbrand
+{
+    color: #30346c;
+}
+
 #index-nav-link:hover, #index-btn-lang
 {
     background-color: #FFA500;
@@ -31,6 +36,11 @@
 }
 
 #about-nav-link:hover, #about-btn-lang
+{
+    background-color: #FFA500;
+}
+
+#resume-nav-link:hover, #resume-btn-lang
 {
     background-color: #FFA500;
 }
