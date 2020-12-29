@@ -1,7 +1,7 @@
 # Portfolio Website for my Data Science Projects
 This project showcases my data science projects on a deployed website.
 
-![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
+<img width="838" alt="project2" src="https://user-images.githubusercontent.com/67918990/103278224-ff2e1980-4998-11eb-99a9-fde1f8b4ee31.png">
 
 ## Table of Contents
 1. [Installation](#installation)
