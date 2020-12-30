@@ -1,7 +1,13 @@
 # Portfolio Website for my Data Science Projects
 This project showcases my data science projects on a deployed website.
 
-<img width="838" alt="project2" src="https://user-images.githubusercontent.com/67918990/103278224-ff2e1980-4998-11eb-99a9-fde1f8b4ee31.png">
+![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
+![Framework](https://img.shields.io/badge/Framework-Flask-red)
+![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/Js-green)
+![Library](https://img.shields.io/badge/Library-BeautifulSoup-purple)
+![Library](https://img.shields.io/badge/Library-pandas-orange)
+![Database](https://img.shields.io/badge/Database-PostgreSQL-lightblue)
+![PaaS](https://img.shields.io/badge/Paas-Heroku-fcba03)
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -42,6 +48,8 @@ Running `python database_feeder.py` will read the data from the Excel files into
 
 ## File Description <a name="descriptions"></a>
 The `templates` folder contains all html pages that will be accessible through the site. The `static` folder is made up of the images displayed on my website, the robots.txt site as well as the css stylesheet. `app.py` is the file which will render the website through the micro web framework Flask. `database_feeder.py` is the script that reads in the data from the Excel files into the database. And the `helper.py` file contains the functions querying the database when a html page is rendered.
+
+<img width="838" alt="project2" src="https://user-images.githubusercontent.com/67918990/103278224-ff2e1980-4998-11eb-99a9-fde1f8b4ee31.png">
 
 ## Licensing, Authors, Acknowledgements <a name="licensing"></a>
 This code can be used under the [MIT license](https://github.com/navroz-lamba/portfolio-website/blob/master/LICENSE.md). I created this website completely from scratch, therefore I am the author of the code, including certain references and code snippets from other people which I marked appropriately. Feel free use the code - but remove any of the content relating to me - to create your own portfolio website.
