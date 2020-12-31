@@ -12,8 +12,8 @@ def fetch_content(content_type):
     Args: content_type = str; the content that should be queried from the databases
     Returns: df_row = contains results from sql query
     '''
-    import dj_database_url
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)   
+    # import dj_database_url
+    # DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)   
     # connect to database
     DATABASE_URL = os.getenv('DATABASE_URL_heroku')
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')

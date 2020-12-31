@@ -14,8 +14,8 @@ skills_en_df = pd.read_excel("database/skills_db_en.xlsx", engine='openpyxl')
 
 
 # connect and create tables if they don't exist yet
-DATABASE_URL = os.getenv('DATABASE_URL_heroku')
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+# DATABASE_URL = os.getenv('DATABASE_URL_heroku')
+conn = psycopg2.connect('postgres://cdeozttzsfzoud:a391ef58d98732d15325cd3cf55fae5aaa7e6107c2fcc16610c579ca807b178d@ec2-52-2-82-109.compute-1.amazonaws.com:5432/d57gmskp6p14qi', sslmode='require')
 cur = conn.cursor()
 
 cur.execute("CREATE TABLE IF NOT EXISTS titles_en \
