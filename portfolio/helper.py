@@ -15,7 +15,7 @@ def fetch_content(content_type):
     # import dj_database_url
     # DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)   
     # connect to database
-    DATABASE_URL = os.getenv('DATABASE_URL_heroku')
+    DATABASE_URL = os.getenv('DATABASE_URL')
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     cur = conn.cursor()
     print(cur)
