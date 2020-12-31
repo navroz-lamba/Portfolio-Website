@@ -17,6 +17,8 @@ xlrd = "*"
 install = "*"
 openpyxl = "*"
 psycopg2-binary = "*"
+pip = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.8"
