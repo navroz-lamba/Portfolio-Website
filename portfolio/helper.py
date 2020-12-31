@@ -15,7 +15,7 @@ def fetch_content(content_type):
 
     # connect to database
     DATABASE_URL = os.getenv('DATABASE_URL_heroku')
-    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+    conn = psycopg2.connect(DATABASE_URL, host="/tmp/")
     cur = conn.cursor()
     print(cur)
 
