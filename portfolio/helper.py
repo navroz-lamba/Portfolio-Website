@@ -12,9 +12,6 @@ def fetch_content(content_type):
     Args: content_type = str; the content that should be queried from the databases
     Returns: df_row = contains results from sql query
     '''
-    # import dj_database_url
-    # DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)   
-    # connect to database
     DATABASE_URL = os.getenv('DATABASE_URL')
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     cur = conn.cursor()
@@ -116,22 +113,3 @@ def get_skill_content():
 
     return skill_dict
 
-# def get_privacy_legal_notice():
-#     '''
-#     Function to get variables necessary for privacy and legal notice pages
-#     Args: None
-#     Returns: address_one, address_two, email = str
-#     '''
-
-#     try:
-#         import config
-#         address_one = config.address_one
-#         address_two = config.address_two
-#         email = config.email
-
-#     except:
-#         address_one = os.environ['ADDRESS_ONE']
-#         address_two = os.environ['ADDRESS_TWO']
-#         email = os.environ['EMAIL']
-
-#     return address_one, address_two, email
