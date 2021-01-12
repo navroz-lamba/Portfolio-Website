@@ -42,7 +42,7 @@ Now your local environment has the DATABASE_URL for your remote Heroku PostgreSQ
 ### Update Database Content <a name="update_database"></a>
 If you want to update the database content, you need to create Excel files containing the relevant information you want to display on the website.
 
-Running `python database_feeder.py` will read the data from the Excel files into the database.
+Running `python portfolio/database_feeder.py` will read the data from the Excel files into the database.
 
 **Please note**: There is currently no feature in this file that deletes and creates a new database if a new column is added. Adding of rows is handled, but not of columns. Therefore, if you want to add a new column to the Excel file and then database, you need to first reset the PostgreSQL in the app on Heroku and then you need to add the relevant code to the script, before running it.
 
