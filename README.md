@@ -47,7 +47,7 @@ Running `python database_feeder.py` will read the data from the Excel files into
 **Please note**: There is currently no feature in this file that deletes and creates a new database if a new column is added. Adding of rows is handled, but not of columns. Therefore, if you want to add a new column to the Excel file and then database, you need to first reset the PostgreSQL in the app on Heroku and then you need to add the relevant code to the script, before running it.
 
 ## File Description <a name="descriptions"></a>
-The `templates` folder contains all html pages that will be accessible through the site. The `static` folder is made up of the images displayed on my website, the robots.txt site as well as the css stylesheet. `app.py` is the file which will render the website through the micro web framework Flask. `database_feeder.py` is the script that reads in the data from the Excel files into the database. And the `helper.py` file contains the functions querying the database when a html page is rendered.
+The `templates` folder contains all html pages that will be accessible through the site. The `static` folder is made up of the images displayed on my website, the robots.txt site as well as the css stylesheet. `run.py` is the file which will render the website through the micro web framework Flask. `database_feeder.py` is the script that reads in the data from the Excel files into the database. And the `helper.py` file contains the functions querying the database when a html page is rendered.
 
 <img width="838" alt="project2" src="https://user-images.githubusercontent.com/67918990/103278224-ff2e1980-4998-11eb-99a9-fde1f8b4ee31.png">
 
