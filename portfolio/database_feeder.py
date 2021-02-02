@@ -28,7 +28,7 @@ cur.execute("CREATE TABLE IF NOT EXISTS portfolio_en \
 cur.execute("CREATE TABLE IF NOT EXISTS skills_en \
             (id SERIAL, topic text, skills text, level integer, tooltip text)")
 
-# select everything from the titles_en database
+# select everything from the titles database
 cur.execute("TRUNCATE titles_en RESTART IDENTITY")
 
 for titles_en_row in titles_en_df.itertuples():
